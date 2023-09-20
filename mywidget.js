@@ -55,14 +55,14 @@ const styles = `
             visibility: hidden;
             transition: opacity 0.3s, visibility 0s 0.3s;
             z-index: 10000;
-            border-radius: 20px; /* Add rounded corners to the iframe container */
+            border-radius: 10px; /* Add rounded corners to the iframe container */
             border: none; /* Remove the border from the iframe container */
         }
 
         iframe {
             width: 100%;
             height: 100%;
-            border-radius: 20px; /* Add rounded corners to the iframe */
+            border-radius: 10px; /* Add rounded corners to the iframe */
             border: none; /* Remove the border from the iframe */
         }
 
