@@ -92,12 +92,25 @@ document.body.appendChild(widgetContainer);
 // Widget logic
 const button = document.getElementById('widget-button');
 const iframeContainer = document.getElementById('iframe-container');
+let isOpen = false; // Initial state (changed to closed)
 
 button.addEventListener('click', () => {
+    isOpen = !isOpen; // Toggle the state
+
+    if (isOpen) {
+        // Change the icon to "support_agent" when open
+        button.innerHTML = '<span class="i">close</span>';
+    } else {
+        // Change the icon to "close" when closed
+        button.innerHTML = '<span class="i">support_agent</span>';
+    }
+
     iframeContainer.classList.toggle('open');
 });
 
 // Check if it's on the home page and open the iframe by default
 if (window.location.pathname === '/') {
     iframeContainer.classList.add('open');
+    isOpen = true; // Change the initial state to open
+    button.innerHTML = '<span class="i">close</span>'; // Set the initial icon to "support_agent"
 }
