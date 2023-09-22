@@ -3,7 +3,7 @@ const linkElement = document.createElement('link');
 linkElement.href = 'https://fonts.googleapis.com/icon?family=Material+Icons';
 linkElement.rel = 'stylesheet';
 
-// Append the <link> element to the widget's <head>
+// Append the <link> element to the widget's <head> 
 document.head.appendChild(linkElement);
 
 // Widget styles
