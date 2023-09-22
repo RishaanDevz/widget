@@ -9,7 +9,7 @@ document.head.appendChild(linkElement);
 // Widget styles
 const styles = `
     <style>
-        .i {      
+        .i {
             font-size: 40px;
             font-family: 'Material Icons';
         }
